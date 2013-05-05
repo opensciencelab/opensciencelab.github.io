@@ -10,14 +10,15 @@ published: true
 * Github organizational account [opensciencelab](https://github.com/opensciencelab/) angelegt
 * Das Repository [opensciencelab.github.io](https://github.com/opensciencelab/opensciencelab.github.io) wird unter [http://opensciencelab.github.io](http://opensciencelab.github.io/) ausgegeben 
 * Gihub-Benutzer, die [mit dem Rechte-Level "Push"](https://help.github.com/articles/what-are-the-different-access-permissions) hinzugefügt werden, können in dieses Repository neue Postings hineinschreiben, Pull Requests mergen etc.
-* Mit etwas Javascript in der [index.html](https://github.com/opensciencelab/opensciencelab.github.io/blob/master/index.html) Liste der Committer neben den Posts generieren
+* Mit etwas Javascript in der [index.html](https://github.com/opensciencelab/opensciencelab.github.io/blob/master/index.html) Liste der Committer neben den Posts generiert
+* ... mit einem Link zur Blame-Ansicht des Postings bei Github
+* Disqus in die default.html einbinden
 
 # Was ist als nächstes zu tun?
 
-* ... und einen Link zur Blame-Ansicht des Postings bei Github
-* ... und eine Liste der letzten Commits zu allen Posts, die z.B. in der Navigationsspalte des Blogs angezeigt wird
 * "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
-* Disqus in die default.html einbinden, Layout aufhübschen etc.
+* Layout aufhübschen etc.
+* Liste der letzten Commits zu allen Posts, wird z.B. in der Navigationsspalte des Blogs angezeigt
 
 # Was später/irgendwann mal tun?
 
