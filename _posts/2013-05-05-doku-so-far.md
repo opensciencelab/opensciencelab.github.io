@@ -9,4 +9,4 @@
 * Mit etwas Javascript in der [index.html](https://github.com/opensciencelab/opensciencelab.github.io/blob/master/index.html) Liste der Committer neben den Posts generieren
 * "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Disqus einbinden, Layout aufhübschen etc.
-* Commits in die Disqus-Kommentar-History einbinden 
+* Commits in die Kommentar-History von Disqus einbinden 
