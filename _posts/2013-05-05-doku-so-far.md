@@ -39,3 +39,4 @@ published: false
   * Eigenes Posting vorschlagen. (Vorgehensweise: Markdown-Datei schreiben und unter [https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts](https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts) einfügen.)
   * Die [gesamte Plattform](https://github.com/opensciencelab/opensciencelab.github.io/fork) kopieren, wenn gewünscht einschließlich aller Inhalte.
 * ...und verschiedene Formen der Rezeption: Lesen/abonnieren als Blog, Download als ePub etc.
+* Maintainer/Fork/Pull Request = "Dritter Modus" des kollaborativen Schreibens, da Überarbeitungen nicht von jedermann, aber auch nicht nur aus geschlossenem Team.
