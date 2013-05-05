@@ -21,7 +21,8 @@ filename: _posts/2013-05-05-doku-so-far.md
 # Was später/irgendwann mal tun?
 
 * Eigener Domänenname
-* Verwendung eines Meta-Tags "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
+* Verwendung einer Meta-Information "licence", um Icon/Link der jeweiligen CC-Lizenz unter den Postings anzuzeigen
+* Verwendung einer Meta-Information "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
@@ -31,3 +32,8 @@ filename: _posts/2013-05-05-doku-so-far.md
 # Asides
 
 * [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
+* Könnte man so formulieren: Open Science Lab - HowTos (Arbeitstitel) unterstützen verschiedene Formen der Interaktion
+** Die [gesamte Plattform](https://github.com/opensciencelab/opensciencelab.github.io/fork) kopieren, wenn gewünscht einschließlich aller Inhalte.
+** Eigenes Posting vorschlagen. (Vorgehensweise: Markdown-Datei schreiben und unter [https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts](https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts) einfügen.)
+** Überarbeitung eines Posting vorschlagen. (Unter dem Posting auf "Bearbeiten" klicken)
+** Posting kommentieren (Kommentarfunktion benutzen)
