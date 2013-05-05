@@ -27,3 +27,7 @@ filename: _posts/2013-05-05-doku-so-far.md
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
+
+# Asides
+
+* [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
