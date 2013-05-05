@@ -14,7 +14,7 @@
 				oslblog.fetchBranches(function (err, res) {
 					var master = oslblog.getBranchByName("master");
 					master.fetchContents(function (err, res) {
-						var file = master.getFileByName({{ page.path }});
+						var file = master.getFileByName("{{ path }}");
 
 						file.fetchCommits(function (err, res) {
 					    	file.eachCommit(function (commit) {
