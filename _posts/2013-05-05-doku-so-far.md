@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ein Post
+title: Doku So Far
 filename: _posts/2013-05-05-doku-so-far.md
 ---
 
