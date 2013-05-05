@@ -24,6 +24,7 @@ a, a:hover, a:visited {
 
 #commits img {
 	height: 40px;
+	width: 40px;
 	border-radius: 4px;
 	box-shadow: 0 0 3px #1E90FF;
 	float: left;
