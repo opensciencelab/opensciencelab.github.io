@@ -11,7 +11,7 @@
 * "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Disqus einbinden, Layout aufhübschen etc.
 
-# Was könnte man später/irgendwann noch mal tun?
+# Was später/irgendwann mal tun?
 
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
