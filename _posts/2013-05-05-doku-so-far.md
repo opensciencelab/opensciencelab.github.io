@@ -2,7 +2,7 @@
 layout: default
 title: Doku So Far
 filename: _posts/2013-05-05-doku-so-far.md
-published: false
+published: true
 ---
 
 # Was haben wir?
@@ -14,7 +14,6 @@ published: false
 
 # Was ist als nächstes zu tun?
 
-* Liste der Commiter für jeden einzelnen Post
 * ... und eine Liste der letzten Commits zu allen Posts generieren, die z.B. in der Navigationsspalte des Blogs angezeigt wird
 * "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Disqus in die default.html einbinden, Layout aufhübschen etc.
