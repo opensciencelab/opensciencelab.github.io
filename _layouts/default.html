@@ -8,15 +8,37 @@
 		<script>
 			$(function () {
 				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?path={{page.filename}}', function(data) {
-					 $.each(data, function(idx, commit) {
-					 	var avatar_url = "";
+					authorHash = {};
 
+					$.each(data, function(i, commit) {
 					 	if (commit.author) {
-					 		avatar_url = commit.author.avatar_url;
+					 		var login = commit.author.login;
+
+					 		if ( authorHash[login]) {
+					 			 authorHash[login].count += 1;
+					 		} else {
+					 			 authorHash[login] = commit.author;
+					 			 authorHash[login].count = 1;
+					 		}
 					 	}
-					 	
-				 		$("#commits").append("<li><img src=\"" + avatar_url + "\"> <a href=\"" + commit.html_url + "\">" + commit.commit.message + "</a></li>");
 					});	
+
+	
+
+					var authors = [];
+
+					for (var login in authorHash) {
+					    authors.push(authorHash[login]);
+					}
+
+					authors.sort(function (a,b) {
+						return a.count < b.count;
+					});
+
+					$.each(authors, function (i, author) {
+						console.log(author);
+						$("#authors").append("<li><a title=\"" + author.count + "\" href=\"" + author.html_url + "\"><img src=\"" + author.avatar_url + "\"/></a></li>");
+					});
 				});
 			});
 		</script>
@@ -24,7 +46,7 @@
 	<body>
 	<h1>Open Science Lab</h1>
 	{{ content }}
-	<h1>History</h1>
-	<ul id="commits"></ul>
+	<h1>Autoren</h1>
+	<ul id="authors"></ul>
 	</body>
 </html>

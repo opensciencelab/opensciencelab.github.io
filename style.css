@@ -1,6 +1,7 @@
 body {
 	background: #333;
 	color: #fff;
+	font: 13px Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 h1 {
@@ -13,33 +14,25 @@ a, a:hover, a:visited {
 	text-decoration: none;
 }
 
-#commits {
+#authors {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-#commits li {
-	margin-bottom: 10px;
+#authors li {
+	display: inline;
 }
 
-#commits img {
+#authors img {
+	margin-right: 10px;
 	height: 40px;
 	width: 40px;
 	border-radius: 4px;
-	box-shadow: 0 0 3px #1E90FF;
+	box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);
 	float: left;
 }
 
-#commits a {
-	background: #444;
-	padding: 5px;
-	display: inline-block;
-	border-radius: 4px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    line-height: 30px;
-    margin-left: 10px;
-}
-
-#commits a:hover {
-	background: #555;
-	box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+#authors img:hover {
+	box-shadow: 0 0 3px #1E90FF;
 }
