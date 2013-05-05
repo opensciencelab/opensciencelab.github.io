@@ -16,10 +16,12 @@ filename: _posts/2013-05-05-doku-so-far.md
 * Liste der Commiter für jeden einzelnen Post
 * ... und eine Liste der letzten Commits zu allen Posts generieren, die z.B. in der Navigationsspalte des Blogs angezeigt wird
 * "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
-* Disqus einbinden, Layout aufhübschen etc.
+* Disqus in die default.html einbinden, Layout aufhübschen etc.
 
 # Was später/irgendwann mal tun?
 
+* Eigener Domänenname
+* Verwendung eines Meta-Tags "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
