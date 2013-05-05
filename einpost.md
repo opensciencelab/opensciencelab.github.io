@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ein Post
+---
+
 Das ist was in *Markdown*
 
 und damit
