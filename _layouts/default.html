@@ -3,20 +3,36 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Open Science Lab</title>
-		<style>
-			body {
-				background: #333;
-				color: #fff;
-			}
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+		<script src="/gh3.js"></script>
+		<script>
+			$(function () {
+				var osl = new Gh3.User("opensciencelab");
+				var oslblog = new Gh3.Repository("opensciencelab.github.io", osl);
+				oslblog.fetchBranches(function (err, res) {
+					var master = oslblog.getBranchByName("master");
+					master.fetchContents(function (err, res) {
+						var file = master.getFileByName("index.html");
 
-			h1 {
-				color: #1E90FF;
-				margin-bottom: 1em;
-			}
-		</style>
+						file.fetchCommits(function (err, res) {
+					    	file.eachCommit(function (commit) {
+					 			if (commit.author) { 
+					 				$("#commits").append("<li><img src=\"" + commit.author.avatar_url + "\"> <a href=\"https://github.com/opensciencelab/opensciencelab.github.io/commit/" + commit.sha + "\">" + commit.message + "</a></li>")
+					 				console.log(commit); 
+					 			}
+							});
+						});
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 	<h1>Open Science Lab</h1>
 	{{ content }}
+	<h1>History</h1>
+	<ul id="commits"></ul>
 	</body>
 </html>
