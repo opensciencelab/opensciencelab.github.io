@@ -2,6 +2,7 @@
 layout: default
 title: Doku So Far
 filename: _posts/2013-05-05-doku-so-far.md
+published: false
 ---
 
 # Was haben wir?
@@ -32,8 +33,8 @@ filename: _posts/2013-05-05-doku-so-far.md
 # Asides
 
 * [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
-* Könnte man so formulieren: Open Science Lab - HowTos (Arbeitstitel) unterstützen verschiedene Formen der Interaktion
-  * Die [gesamte Plattform](https://github.com/opensciencelab/opensciencelab.github.io/fork) kopieren, wenn gewünscht einschließlich aller Inhalte.
-  * Eigenes Posting vorschlagen. (Vorgehensweise: Markdown-Datei schreiben und unter [https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts](https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts) einfügen.)
-  * Überarbeitung eines Posting vorschlagen. (Unter dem Posting auf "Bearbeiten" klicken)
+* Könnte man so formulieren: *Open Science Lab - HowTos* (Arbeitstitel) unterstützen verschiedene Formen der Interaktion
   * Posting kommentieren (Kommentarfunktion benutzen)
+  * Überarbeitung eines Posting vorschlagen. (Unter dem Posting auf "Bearbeiten" klicken)
+  * Eigenes Posting vorschlagen. (Vorgehensweise: Markdown-Datei schreiben und unter [https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts](https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts) einfügen.)
+  * Die [gesamte Plattform](https://github.com/opensciencelab/opensciencelab.github.io/fork) kopieren, wenn gewünscht einschließlich aller Inhalte.
