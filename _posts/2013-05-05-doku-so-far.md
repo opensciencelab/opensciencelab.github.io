@@ -30,11 +30,12 @@ published: false
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 
-# Asides
+# Wie erklärt man nachher Dritten, was das hier ist?
 
 * [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
-* Könnte man so formulieren: *Open Science Lab - HowTos* (Arbeitstitel) unterstützen verschiedene Formen der Interaktion
+* Könnte man so formulieren: *How To Open Science? (powered by TIB Open Science Lab)* (Arbeitstitel) unterstützt unterschiedlich "tiefe" Formen der Interaktion:
   * Posting kommentieren (Kommentarfunktion benutzen)
   * Überarbeitung eines Posting vorschlagen. (Unter dem Posting auf "Bearbeiten" klicken)
   * Eigenes Posting vorschlagen. (Vorgehensweise: Markdown-Datei schreiben und unter [https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts](https://github.com/opensciencelab/opensciencelab.github.io/tree/master/_posts) einfügen.)
   * Die [gesamte Plattform](https://github.com/opensciencelab/opensciencelab.github.io/fork) kopieren, wenn gewünscht einschließlich aller Inhalte.
+* ...und verschiedene Formen der Rezeption: Lesen/abonnieren als Blog, Download als ePub etc.
