@@ -30,7 +30,7 @@ published: false
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 
-# Wie erklärt man nachher Dritten, was das hier ist?
+# Wie erklärt man Dritten, was das hier ist?
 
 * [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
 * Könnte man so formulieren: *How To Open Science? (powered by TIB Open Science Lab)* (Arbeitstitel) unterstützt unterschiedlich "tiefe" Formen der Interaktion:
