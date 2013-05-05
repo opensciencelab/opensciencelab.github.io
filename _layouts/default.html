@@ -4,27 +4,19 @@
 		<meta charset="utf-8">
 		<title>Open Science Lab</title>
 		<link rel="stylesheet" type="text/css" href="/style.css">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-		<script src="/gh3.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script>
 			$(function () {
-				var osl = new Gh3.User("opensciencelab");
-				var oslblog = new Gh3.Repository("opensciencelab.github.io", osl);
-				oslblog.fetchBranches(function (err, res) {
-					var master = oslblog.getBranchByName("master");
-					master.fetchContents(function (err, res) {
-						var file = master.getFileByName("{{page.filename}}");
+				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?path={{page.filename}}', function(data) {
+					 $.each(data, function(idx, commit) {
+					 	var avatar_url = "";
 
-						file.fetchCommits(function (err, res) {
-					    	file.eachCommit(function (commit) {
-					 			if (commit.author) { 
-					 				$("#commits").append("<li><img src=\"" + commit.author.avatar_url + "\"> <a href=\"https://github.com/opensciencelab/opensciencelab.github.io/commit/" + commit.sha + "\">" + commit.message + "</a></li>")
-					 				console.log(commit); 
-					 			}
-							});
-						});
-					});
+					 	if (commit.author) {
+					 		avatar_url = commit.author.avatar_url;
+					 	}
+					 	
+				 		$("#commits").append("<li><img src=\"" + avatar_url + "\"> <a href=\"" + commit.html_url + "\">" + commit.commit.message + "</a></li>");
+					});	
 				});
 			});
 		</script>
