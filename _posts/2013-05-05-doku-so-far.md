@@ -2,7 +2,7 @@
 layout: default
 title: Doku So Far
 filename: _posts/2013-05-05-doku-so-far.md
-published: false
+published: true
 ---
 
 # Was haben wir?
