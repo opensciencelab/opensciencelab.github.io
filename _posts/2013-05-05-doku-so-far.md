@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ein Post
+---
+
 # Was haben wir?
 
 * Github organizational account [opensciencelab](https://github.com/opensciencelab/) angelegt
