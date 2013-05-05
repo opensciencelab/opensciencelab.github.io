@@ -37,3 +37,7 @@ a, a:hover, a:visited {
 #authors img:hover {
 	box-shadow: 0 0 3px #1E90FF;
 }
+
+.clear {
+	clear: both;
+}
