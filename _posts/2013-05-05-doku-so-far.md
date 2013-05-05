@@ -30,6 +30,11 @@ published: true
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 
+# Related / mögliche auf dies hier aufbauende Projekte
+
+* DOI für jedes Posting, vielleicht beim erstmaligen Veröffentlichen, und danach...?
+* dLZA-Lösung für sowas
+
 # Wie erklärt man Dritten, was das hier ist?
 
 * [Nettes Blogposting zum Thema](http://kinlane.com/2013/01/02/creating-two-levels-of-open-engagement-with-github-pages-and-disqus/)
