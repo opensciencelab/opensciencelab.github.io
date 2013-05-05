@@ -19,6 +19,7 @@ title: Ein Post
 
 # Was später/irgendwann mal tun?
 
+* Eigener Domänenname
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
