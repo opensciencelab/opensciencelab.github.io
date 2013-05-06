@@ -28,6 +28,7 @@ published: true
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
+* Piwik einbinden
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 
