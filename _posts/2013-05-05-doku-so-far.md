@@ -16,11 +16,12 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * Disqus in die default.html eingebunden
 * "Bearbeiten"-Button unter den Posts eingebunden, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Persönlicher Access Token eingebaut, um die Github API 5000 mal / Stunde benutzen zu können (sonst wäre das begrenzt auf 60 / Stunde)
+* [History-Seite](http://opensciencelab.github.io/history/) mit den letzten Commits zu allen Posts
 
 # Was ist als nächstes zu tun?
 
+* Die History-Liste der letzten Commits zu allen Posts (s.o.) in der Navigationsspalte des Blogs anzeigen o.ä. integrieren
 * Layout aufhübschen etc.
-* Liste der letzten Commits zu allen Posts, wird z.B. in der Navigationsspalte des Blogs angezeigt
 
 # Was später/irgendwann mal tun?
 
