@@ -31,7 +31,7 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * Verwendung einer Meta-Information "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
-* Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
+* Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung. Beispielhaftes Problem mit der jetzigen Lösung ("organizational account" bei Github): Um Pull Requests für die eigenen Postings bearbeiten zu können ist man Mitglied des organizational accounts, aber man kann dann keine Pull Requests zu den Postings anderer Autoren machen - sondern man committet seine Änderungen dann direkt. 
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 * Layout: "Geschweifte Klammer" für Commits zu mehreren Postings gleichzeitig. Idee: Tabellenspalte 1 zählt die Commits auf, Tabellenspalte 2 die (ggf. mehreren) davon betroffenen Postings. Eine (beliebig lange) geschweifte Klammer dazwischen als Verbindung. Könnte man mit [box drawing characters](https://en.wikipedia.org/wiki/Box-drawing_character) (Unicode) malen.
