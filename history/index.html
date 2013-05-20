@@ -29,7 +29,11 @@ filename: history/index.html
 						}
 
 						rowHTML += "</tr>";
-						changesHTML[i] = rowHTML;
+						if (changesHTML[i]) {
+							changesHTML[i] += rowHTML;
+						} else {
+							changesHTML[i] = rowHTML;
+						}
 					});
 			
 				});
