@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Open Science - HOW TOs</title>
+		<link rel="stylesheet" type="text/css" href="/reset.css">
 		<link rel="stylesheet" type="text/css" href="/style.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script>
@@ -14,7 +15,7 @@
 					 	if (commit.author) {
 					 		var login = commit.author.login;
 
-					 		if ( authorHash[login]) {
+					 		if (authorHash[login]) {
 					 			 authorHash[login].count += 1;
 					 		} else {
 					 			 authorHash[login] = commit.author;
@@ -42,26 +43,43 @@
 		</script>
 	</head>
 	<body>
-		<h1><a href="http://opensciencelab.github.io/">Open Science - HOW TOs</a></h1>
-		{{ content }}
-		<p><a style="font-weight:bold; color:green; text-decoration:underline" href="http://prose.io/#opensciencelab/opensciencelab.github.io/edit/master/{{page.filename}}">Schlage eine Ergänzung oder Überarbeitung vor</a></p>
-		<h1><a href="https://github.com/opensciencelab/opensciencelab.github.io/blame/master/{{page.filename}}">Autoren</a></h1>
-		<ul id="authors"></ul>
+		<div id="sidebar">
+			<div class="container">
+				<h2><a href="http://opensciencelab.github.io/">Open Science - HOW TOs</a></h2>
+				<ul>
+					<li><a class="edit" href="http://prose.io/#opensciencelab/opensciencelab.github.io/edit/master/{{page.filename}}">Schlage eine Ergänzung oder Überarbeitung vor</a></li>
+					<li><a href="/posts">Blog</a></li>
+					<li><a href="/history">&Auml;nderungen</a></li>
+				</ul>
+				<h2><a href="https://github.com/opensciencelab/opensciencelab.github.io/blame/master/{{page.filename}}">Autoren</a></h2>
+				<ul id="authors"></ul>
+			</div>
+		</div>
+		<div id="content">
+			<div class="container">
+				<h1>{{page.title}}</h1>
+				{{ content }}
+			</div>
+		</div>
+		
 		<div class="clear"></div>
-		<div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'opensciencelab'; // required: replace example with your forum shortname
+		<div id="comments">
+			<div class="container">
+				<div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			        var disqus_shortname = 'opensciencelab'; // required: replace example with your forum shortname
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
+			        /* * * DON'T EDIT BELOW THIS LINE * * */
+			        (function() {
+			            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			        })();
+			    </script>
+			    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div>
+    	</div>
 	</body>
 </html>
