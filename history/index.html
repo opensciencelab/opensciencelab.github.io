@@ -1,0 +1,31 @@
+---
+layout: default
+title: Historie
+filename: history/index.html
+---
+<table id="changes"></table>
+<script>
+	$(function () {
+		$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?access_token=64c5521557358537199f2087b5f8501e4425a29b&per_page=10', function(commits) {
+			$.each(commits, function(i, commit) {
+				
+				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits/' + commit.sha + '?access_token=64c5521557358537199f2087b5f8501e4425a29b', function(details) {
+					var renderedCommitMessage = false;
+
+					for (i = 0; i < details.files.length; i++) {
+						var rowHTML = "<tr><td>" + details.files[i].filename + "</td>";
+
+						if (!renderedCommitMessage) {
+							rowHTML += "<td rowspan=\"" + details.files.length + "\"><a href=\"" + commit.html_url + "\">" + commit.commit.message + "</a></td>";
+							renderedCommitMessage = true;
+						}
+
+						rowHTML += "</tr>";
+						$("#changes").append(rowHTML);
+					};
+				});
+
+			});	
+		});
+	});
+</script>

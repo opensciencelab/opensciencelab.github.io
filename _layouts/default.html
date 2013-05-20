@@ -7,7 +7,7 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script>
 			$(function () {
-				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?path={{page.filename}}', function(data) {
+				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?access_token=64c5521557358537199f2087b5f8501e4425a29b&path={{page.filename}}', function(data) {
 					authorHash = {};
 
 					$.each(data, function(i, commit) {
