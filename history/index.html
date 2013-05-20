@@ -7,25 +7,35 @@ filename: history/index.html
 <script>
 	$(function () {
 		$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits?access_token=64c5521557358537199f2087b5f8501e4425a29b&per_page=10', function(commits) {
+			var XHRs = [];
+
 			$.each(commits, function(i, commit) {
-				
-				$.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits/' + commit.sha + '?access_token=64c5521557358537199f2087b5f8501e4425a29b', function(details) {
+				XHRs.push($.getJSON('https://api.github.com/repos/opensciencelab/opensciencelab.github.io/commits/' + commit.sha + '?access_token=64c5521557358537199f2087b5f8501e4425a29b'));
+			});
+
+			$.when.apply(null, XHRs).done(function () {
+				var changesHTML = new Array(commits.length);
+
+				$.each(XHRs, function(i, XHR) {
+					var details = XHR.responseJSON;
 					var renderedCommitMessage = false;
 
-					for (i = 0; i < details.files.length; i++) {
-						var rowHTML = "<tr><td>" + details.files[i].filename + "</td>";
+					$.each(details.files, function(j, file) {
+						var rowHTML = "<tr><td>" + file.filename.split("/").reverse()[0] + "</td>";
 
 						if (!renderedCommitMessage) {
-							rowHTML += "<td rowspan=\"" + details.files.length + "\"><a href=\"" + commit.html_url + "\">" + commit.commit.message + "</a></td>";
+							rowHTML += "<td rowspan=\"" + details.files.length + "\"><a href=\"" + details.html_url + "\">" + details.commit.message + "</a></td>";
 							renderedCommitMessage = true;
 						}
 
 						rowHTML += "</tr>";
-						$("#changes").append(rowHTML);
-					};
+						changesHTML[i] = rowHTML;
+					});
+			
 				});
 
-			});	
+				$("#changes").append(changesHTML.join(''));
+			});
 		});
 	});
 </script>
