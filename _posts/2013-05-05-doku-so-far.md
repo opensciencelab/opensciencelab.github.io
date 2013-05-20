@@ -17,6 +17,12 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * "Bearbeiten"-Button unter den Posts eingebunden, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Persönlicher Access Token eingebaut, um die Github API 5000 mal / Stunde benutzen zu können (sonst wäre das begrenzt auf 60 / Stunde)
 * [History-Seite](http://opensciencelab.github.io/history/) mit den letzten Commits zu allen Posts
+* Workflow aus Autorensicht:
+  1. Durch Pull Request eigenen Artikel als Posting vorschlagen
+  2. Wird durch Editor angenommen
+  3. Meldungen der Pull Requests von Lesern zum eigenen Artikel abonnieren
+  4. Kommentieren ob angenommen oder abgelehnt werden soll, ggf. gleich eigenen weiteren Pull Request hinterherschicken - Editor nimmt alles wunschgemäß an oder lehnt ab
+  5. Um Teilnahme an *Kommentaren* (Disqus) zu optimieren: Gravatar anlegen, sodass man in Kommentar-Threads als Autor des Ursprungsbeitrags erkennbar wird
 
 # Was ist als nächstes zu tun?
 
@@ -31,7 +37,7 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * Verwendung einer Meta-Information "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
-* Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung. Beispielhaftes Problem mit der jetzigen Lösung ("organizational account" bei Github): Um Pull Requests für die eigenen Postings bearbeiten zu können ist man Mitglied des organizational accounts, aber man kann dann keine Pull Requests zu den Postings anderer Autoren machen - sondern man committet seine Änderungen dann direkt. 
+* Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung.
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
 * Layout: "Geschweifte Klammer" für Commits zu mehreren Postings gleichzeitig. Idee: Tabellenspalte 1 zählt die Commits auf, Tabellenspalte 2 die (ggf. mehreren) davon betroffenen Postings. Eine (beliebig lange) geschweifte Klammer dazwischen als Verbindung. Könnte man mit [box drawing characters](https://en.wikipedia.org/wiki/Box-drawing_character) (Unicode) malen.
