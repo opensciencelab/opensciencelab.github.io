@@ -15,6 +15,7 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * ... mit einem Link zur Blame-Ansicht des Postings bei Github
 * Disqus in die default.html eingebunden
 * "Bearbeiten"-Button unter den Posts eingebunden, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
+* Persönlicher Access Token eingebaut, um die Github API 5000 mal / Stunde benutzen zu können (sonst wäre das begrenzt auf 60 / Stunde)
 
 # Was ist als nächstes zu tun?
 
