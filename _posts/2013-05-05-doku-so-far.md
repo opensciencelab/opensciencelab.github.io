@@ -8,7 +8,7 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 
 # Was haben wir?
 
-* Github organizational account [opensciencelab](https://github.com/opensciencelab/) angelegt
+* Github organizational account [opensciencelab](https://github.com/opensciencelab/) angelegt.
 * Das Repository [opensciencelab.github.io](https://github.com/opensciencelab/opensciencelab.github.io) wird unter [http://opensciencelab.github.io](http://opensciencelab.github.io/) ausgegeben 
 * Gihub-Benutzer, die [mit dem Rechte-Level "Push"](https://help.github.com/articles/what-are-the-different-access-permissions) hinzugefügt werden, können in dieses Repository neue Postings hineinschreiben, Pull Requests mergen etc.
 * Mit etwas Javascript in der [index.html](https://github.com/opensciencelab/opensciencelab.github.io/blob/master/index.html) Liste der Committer neben den Posts generiert
