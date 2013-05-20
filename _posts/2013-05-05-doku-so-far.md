@@ -23,15 +23,16 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 
 # Was später/irgendwann mal tun?
 
-* Eigener Domänenname
+* Eigener Domänenname?
+* Piwik einbinden
 * Verwendung einer Meta-Information "licence", um Icon/Link der jeweiligen CC-Lizenz unter den Postings anzuzeigen
 * Verwendung einer Meta-Information "category", um wie in einem Blog Unterzeichnisse für Kategorien in der URL verwenden zu können
 * Blogartige Startseite mit Vorschau der ersten 500 Zeichen jedes Postings
 * Commits in die Kommentar-History von Disqus einbinden 
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
-* Piwik einbinden
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
+* Layout: Geschweifte Klammer für Commits zu mehreren Postings gleichzeitig. Idee: Tabellenspalte 1 zählt die Commits auf, Tabellenspalte 2 die (ggf. mehreren) davon betroffenen Postings. Eine (beliebig lange) geschweifte Klammer dazwischen als Verbindung.
 
 # Related / mögliche auf dies hier aufbauende Projekte
 
