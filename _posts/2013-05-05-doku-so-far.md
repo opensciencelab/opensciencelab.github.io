@@ -1,8 +1,9 @@
 ---
+published: true
 layout: default
 title: Doku So Far
-filename: _posts/2013-05-05-doku-so-far.md
-published: true
+filename: "_posts/2013-05-05-doku-so-far.md"
+
 ---
 
 # Was haben wir?
@@ -12,11 +13,11 @@ published: true
 * Gihub-Benutzer, die [mit dem Rechte-Level "Push"](https://help.github.com/articles/what-are-the-different-access-permissions) hinzugefügt werden, können in dieses Repository neue Postings hineinschreiben, Pull Requests mergen etc.
 * Mit etwas Javascript in der [index.html](https://github.com/opensciencelab/opensciencelab.github.io/blob/master/index.html) Liste der Committer neben den Posts generiert
 * ... mit einem Link zur Blame-Ansicht des Postings bei Github
-* Disqus in die default.html einbinden
+* Disqus in die default.html eingebunden
+* "Bearbeiten"-Button unter den Posts eingebunden, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 
 # Was ist als nächstes zu tun?
 
-* "Bearbeiten"-Button unter den Posts, wie bei [Brunosan](http://brunosan.eu/2012/07/01/jekyll-pull-requests/)
 * Layout aufhübschen etc.
 * Liste der letzten Commits zu allen Posts, wird z.B. in der Navigationsspalte des Blogs angezeigt
 
