@@ -34,7 +34,7 @@ filename: "_posts/2013-05-05-doku-so-far.md"
 * Github-externer Server mit kleinem Ruby-Skript für granularere Rollen-/Rechteverteilung
 * Alternativer Einstieg in die Textsammlung: Mehr "Inhaltsverzeichnis" als "Blog"
 * Alternative Ausgabe der Textsammlung, z.B. als ePub oder PDF
-* Layout: Geschweifte Klammer für Commits zu mehreren Postings gleichzeitig. Idee: Tabellenspalte 1 zählt die Commits auf, Tabellenspalte 2 die (ggf. mehreren) davon betroffenen Postings. Eine (beliebig lange) geschweifte Klammer dazwischen als Verbindung.
+* Layout: "Geschweifte Klammer" für Commits zu mehreren Postings gleichzeitig. Idee: Tabellenspalte 1 zählt die Commits auf, Tabellenspalte 2 die (ggf. mehreren) davon betroffenen Postings. Eine (beliebig lange) geschweifte Klammer dazwischen als Verbindung. Könnte man mit [box drawing characters](https://en.wikipedia.org/wiki/Box-drawing_character) (Unicode) malen.
 
 # Related / mögliche auf dies hier aufbauende Projekte
 
